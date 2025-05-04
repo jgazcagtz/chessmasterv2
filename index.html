@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> ChessMaster V2.</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>♟️ ChessMaster - A Complete Chess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>♟️ ChessMaster</h1>
+            <div class="game-controls">
+                <div class="game-info">
+                    <div id="current-player">Turn: <span id="player-color">White</span></div>
+                    <div id="game-status"></div>
+                    <div id="timer">⏱️ <span id="time">00:00</span></div>
+                </div>
+                <div class="controls">
+                    <div class="difficulty">
+                        <label for="level-select">Difficulty:</label>
+                        <select id="level-select">
+                            <option value="1">Easy</option>
+                            <option value="2" selected>Medium</option>
+                            <option value="3">Hard</option>
+                        </select>
+                    </div>
+                    <div class="mode-selection">
+                        <button id="computer-btn">vs Computer</button>
+                        <button id="two-player-btn">Two Players</button>
+                        <button id="new-game-btn">New Game</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="board-container">
+                <div id="board"></div>
+            </div>
+            <div id="game-panel">
+                <div id="move-history">
+                    <h3>Move History</h3>
+                    <div id="history-list"></div>
+                </div>
+                <div id="captured-pieces">
+                    <h3>Captured</h3>
+                    <div class="captured-container">
+                        <div id="white-captured"></div>
+                        <div id="black-captured"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>ChessMaster v2.0 | <a href="https://buymeacoffee.com/georgegeorge" target="_blank">☕ Buy me a coffee</a></p>
+        </footer>
+    </div>
+
+    <!-- Promotion Modal -->
+    <div id="promotion-modal" class="modal">
+        <div class="modal-content">
+            <h3>Pawn Promotion</h3>
+            <p>Choose a piece:</p>
+            <div id="promotion-options"></div>
+        </div>
+    </div>
+
+    <!-- Sounds -->
+    <audio id="move-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-chess-timer-1041.mp3"></audio>
+    <audio id="capture-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"></audio>
+    <audio id="check-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3"></audio>
+    <audio id="checkmate-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
